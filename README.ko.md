@@ -46,7 +46,7 @@ Machine-Tools-Edge-Safety-Paper
  * 구현 유연성 및 시장 맞춤형 확장 선언 (Design-to-Cost Flexibility): 본 명세서의 하드웨어 구성 및 레이어 구조는 최적 성능을 발휘하는 일 실시예를 예시한 것입니다. 실제 양산 및 현장 적용 환경에서는 시장의 수요, 경제성, 가공 소재 및 운용 조건에 따라 특정 모듈 및 센서 구성의 선택적 생략, 축소, 스케일링 또는 커스텀 최적화가 유연하게 가능하며, 이러한 기능적 변형 및 등가 구현 역시 본 선행기술 공개 범주에 포괄 적용됩니다.
 7. 실리보호, 법적 적용 범위 이원화 및 면책 고지
  * 원안 우선 원칙 (Korean Original Supremacy): 본 기술 명세 및 마스터 체계의 최상위 법적·공학적 권위는 한국어 원문(README.ko.md)에 있습니다. 기타 언어 번역본(README.md)은 보조 참고본이며, 내용상 불일치나 해석의 차이가 발생할 경우 한국어 원문이 우선합니다.
- * 저작권 및 특허 라이선스 이원화 적용: 본 문서 텍스트 표현물 및 서사 구조의 저작권에는 CC BY 4.0을 적용하며, 본 문서에 기술된 기술적 사상, 상위 프레임워크 아키텍처, 파생 특허 방어 및 통상실시권 호환성에는 DPL v1.0 (Defensive Patent License v1.0)을 독립하여 이원화 적용합니다.
+ * 저작권 및 표준 라이선스 이원화 적용 (LICENSE 파일 연동): 본 저장소의 문서, 명세, 아키텍처 청사진 등 텍스트 표현물에는 Creative Commons Attribution 4.0 International (CC BY 4.0)을 적용하고, 파생 코드 및 실행 구현물에는 Apache License 2.0 (Apache-2.0)을 이원화 적용합니다. 상세 SPDX 표준 식별자(SPDX-License-Identifier: CC-BY-4.0 AND Apache-2.0) 및 법적 조건은 본 저장소 루트의 LICENSE 파일을 따릅니다. 기존 커스텀 "DPL v1.0 (Defensive Patent License v1.0)" 고지는 2026년 9월 27일 자로 본 표준 라이선스 체계(CC BY 4.0 & Apache-2.0)로 전면 대체되었습니다.
  * 영업비밀 보호 및 구현체 분리 명시: 본 공개 백서는 상위 아키텍처 사상과 개념적 메커니즘 개시를 목적으로 하며, 실제 현장 캘리브레이션 파라미터(임계치), eFPGA RTL 회로 설계도, 정밀 CAD 파일, 양산 펌웨어 바이너리는 영업비밀(Trade Secret)로 별도 비공개 유지합니다. 개념 실증용(PoC) 참조 코드는 오프라인 레포지토리 자산으로 독자 분류·보관합니다.
  * 설계자의 상용화 권고, 법적 안전인증 준수 및 FTO 재검증 책임 귀속: 본 백서는 설계자(deundeuni)가 고난도 현장의 재해 예방을 위해 정립한 공학적 구상 및 선행기술 방어 백서입니다. 설계자는 본 아키텍처를 바탕으로 실제 장치를 제작·구현하려는 모든 후속 개발자 및 사업자가 해당 국가의 법적 안전인증(대한민국 KCs 의무/자율안전확인신고, CE, UL, OSHA 등)을 엄격히 취득하고, 기존 선행특허 및 FTO(Freedom to Operate) 최신 상태를 재검증하여 안전하게 상용화할 것을 권고합니다. 본 마스터 백서 자체는 인증받은 상용 완제품이 아닌 개념적 기술 사상의 개시물이므로, 실제 구현 과정에서의 법적 안전인증 취득, 선행특허 FTO 재검증, 위험성 평가 및 기능안전(SIL/PL) 검증 의무는 전적으로 '실제 구현 및 운용 주체'에게 귀속됩니다.
  * 개념적 방향성 정의, AS-IS 제공 및 면책 고지: 본 마스터 백서 및 서사 정리 내용 역시 선행기술 방어 공표 및 기술적 방향성 제시(Directional Guidance)를 유일한 목적으로 하며, 현장에 즉각 적용 가능한 물리적 완결성이나 시제품 동작을 직접 보증하지 아니합니다(AS-IS 제공). 설계자(deundeuni)는 본 문서에 개시된 논리를 원용하여 제작된 장치나 하위 백서 연계 적용으로 인해 발생할 수 있는 예기치 않은 신체적·재산적 손실에 대해 법적 책임(Liability)을 부담하지 아니하며, 실제 현장 적용 시의 모든 공학적 검증과 안전 담보 책임은 해당 시공·운용 주체에게 있습니다.
@@ -59,3 +59,5 @@ Machine-Tools-Edge-Safety-Paper
  * Lathe-Milling-Drillpress-Edge-Safety-Paper: ./Lathe-Milling-Drillpress-Edge-Safety-Paper/README.ko.md
  * Sheet-Metal-NC-Punch-Clamp-Avoidance-Safety-Architecture: ./Sheet-Metal-NC-Punch-Clamp-Avoidance-Safety-Architecture/README.ko.md
  * Grinder-Portable-Cutting-Tool-Safety-Architecture: ./Grinder-Portable-Cutting-Tool-Safety-Architecture/README.ko.md
+부록 A. 제개정 이력 (Revision History)
+ * 2026-09-27: 라이선스 표기를 2026-09-27자로 표준 라이선스(CC BY 4.0 & Apache-2.0 이원화 체계)로 재편하고 저장소 루트의 LICENSE 파일과 정밀 연동함. 기존 커스텀 DPL v1.0 표기를 공식 대체하며, 변경 이력 자체도 방어적 공개 기록의 일부로 지속 보존을 도모함.
